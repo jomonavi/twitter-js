@@ -36,6 +36,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+#allTweets {
+  margin-left:  40px;
+  margin-bottom: 20px;
+}
  
 code {
   font-size: 80%;
@@ -56,4 +60,12 @@ code {
 }
 .content .by {
   font-weight: bold;
+}
+li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+ul li img{
+  margin-right:10px;
+  float:left;
 }

@@ -39,12 +39,9 @@ app.set('views', __dirname + '/views');
 
 app.use(express.static(__dirname + '/public'));
 
-// app.get('/', function(req,res) {
-// 	// res.send("Hello World");
-// 	res.render('index', {title: 'Hall of Fame', people: people});
-// });
-
-
-// app.get('/news', function(req,res) {
-// 	res.send("This is a news page");
-// });
+var User = require('./models').User;
+User.find(1).then(function(user) {
+    user.getTweets().then(function(tweets) {
+        console.log(tweets);
+  });
+});

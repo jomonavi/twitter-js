@@ -31,10 +31,10 @@
       <!-- display tweets here -->
       {% for tweet in tweets %}
       <li class="clearfix">
-        <img src="http://webwork.maa.org/w/images/3/3f/Twitter-logo-50px.png">
+        <img src={{tweet.User.pictureUrl}}>
         <div id="text">
-          <a href="/users/{{tweet.name}}"><b>{{tweet.name}}</b></a></br>
-          {{tweet.text}} </br>
+          <a href="/users/{{tweet.name}}"><b>{{tweet.User.name}}</b></a></br>
+          {{tweet.tweet}} </br>
           <a href="/users/{{tweet.name}}/tweets/{{tweet.id}}">Re-Tweet</a>
         </div>
         </li>
